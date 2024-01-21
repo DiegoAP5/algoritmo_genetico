@@ -138,6 +138,11 @@ class Interfaz:
         peor = [item['peor'] for item in historial_generaciones]
         promedio = [item['promedio'] for item in historial_generaciones]
 
+        linea_mejor, = self.ax.plot(generaciones, mejor, label='Mejor')
+        linea_peor, = self.ax.plot(generaciones, peor, label='Peor')
+        linea_promedio, = self.ax.plot(
+            generaciones, promedio, label='Promedio')
+
         self.ax.legend()
         
         
