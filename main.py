@@ -229,7 +229,7 @@ def iniciar_algoritmo_genetico(minimizar, individuos_iniciales, poblacion_max, r
     evaluar_poblacion(poblacion)
 
     print(historial_generaciones)
-
+    print("minimizar: ",minimizar)
     mejor_individuo = {
         "Binario": poblacion[0], 'i': convertir_bit_a_numero(poblacion[0]), 'f(x):': generar_fx_con_binario(poblacion[0])}
 
